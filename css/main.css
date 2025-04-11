@@ -1,0 +1,106 @@
+/* linea de comentario
+
+
+p{
+    color: blue;
+}
+
+
+se aplican estilos por selectores
+
+por nombre de etiqueta 
+
+main{
+    background-color: brown;
+}
+
+ por nombre de CLASS 
+
+.blanco{
+    color: white;
+}
+ por nombre de ID  
+
+#negro{
+    color: black !important;
+}
+
+ */
+
+
+
+ body{
+    background-color: rgb(102, 82, 192);
+ }
+
+ /* estilos de header  */
+ header{
+    text-align: center;
+ }
+ header img {
+    width: 150px;
+    height: 100px; 
+}
+
+
+ /* ruta de especificidad */
+
+ header nav ul{
+    list-style: none;
+ }
+
+
+ header nav ul li a{
+    text-decoration: none;
+    color: black;
+ }
+
+ /* estilos de main */
+
+ main{
+    text-align: center;
+ }
+
+ main ul{list-style: none;}
+
+ main nav ul{ list-style: none;
+
+ }
+ 
+
+ main nav ul li a{
+    text-decoration: none;
+    color: red;
+ }
+
+ main img{
+width: 250px;
+height: 200px;
+ }
+
+
+ main h1{
+    text-transform: uppercase;
+ }
+
+ main p{
+    text-align: center;
+    width: 350px;
+    margin: 0 auto;
+ }
+
+ main div img{
+    width: 150px;
+    height: 100px;
+}
+main div p{
+    text-align: center;
+    width: 350px;
+    margin: 0 auto;
+}
+
+ /* estilos de footer */
+
+ footer{
+    text-align: center;
+ }
