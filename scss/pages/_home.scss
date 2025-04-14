@@ -1,0 +1,10 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixin";
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: $bg-principal;
+  color: $color-font;
+  margin: 0;
+  padding: 0;
+}
+
