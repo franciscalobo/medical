@@ -13,5 +13,12 @@
 /*estilos generales*/
 
 body{
-    background-color: $bg-principal ;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: $color-secundario;
+    color: $color-font;
+}
+
+footer{
+    background-color: $color-secundario;
+    height: 50px;
 }

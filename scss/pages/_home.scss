@@ -1,10 +1,58 @@
 @import "../abstracts/variables";
 @import "../abstracts/mixin";
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: $bg-principal;
-  color: $color-font;
-  margin: 0;
-  padding: 0;
+
+.body{
+    @include flex-body;
 }
 
+.header{
+    @include flex;
+    nav{
+        background-color: $color-terciario;
+        ul{
+            list-style: none;
+            color: $color-font;
+            display: flex;
+            gap: 15px;
+
+        }
+    }
+}
+.banner {
+    position: relative;
+    height: 50vh;
+    background-image: url('../img/banner-home.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: $color-terciario;
+    padding: 2rem;
+  
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: #fcfcfc58;
+      z-index: 1;
+    }
+  
+    &__contenido {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      padding: 2rem;
+  
+      h1,
+      p {
+        color: $color-font-blanco;
+        text-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+  
+.main {
+    background-color: $color-terciario;
+}

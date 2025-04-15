@@ -2,6 +2,7 @@
 
 @mixin flex{
     display: flex;
+    justify-content: center;
     align-items: center;
     
 }
@@ -11,4 +12,22 @@
     height: 100%;
     object-fit: cover;
 
+}
+
+@mixin section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: $color-terciario;
+  }
+
+@mixin flex-body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-around;
+}
+
+@mixin flex-main{
+    background-color: $color-terciario;
+    flex-grow: 1;
 }
