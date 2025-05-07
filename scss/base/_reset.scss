@@ -1,24 +1,27 @@
-// //import variables
-// @import "../abstracts/variables";
+//import variables
 
-// /*reset*/
+@use '../abstracts/variables';
 
-// *{
-//     margin: 0;
-//     padding: 0;
-//     box-sizing: border-box;
-// }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html, body {
+  height: 100%;
+  font-family: variables.$fuente-principal;
+  background-color: variables.$color-fondo;
+  color: variables.$color-texto;
+}
 
-// /*estilos generales*/
+ul, ol {
+  list-style: none;
+}
 
-// body{
-//     font-family: 'Segoe UI', sans-serif;
-//     background-color: $color-secundario;
-//     color: $color-font;
-// }
-
-// footer{
-//     background-color: $color-secundario;
-//     height: 50px;
-// }
+a {
+  text-decoration: none;
+  color: inherit;
+}

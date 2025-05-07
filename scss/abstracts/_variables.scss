@@ -1,9 +1,17 @@
 // Paleta de colores Medical
 
-$bg-principal: #1C1C1C;
-$color-secundario:#03989e;
-$color-terciario:#ffffff;
+// Colores
+$color-primario: #4CAF50; // Verde médico
+$color-secundario: #2E7D32; // Verde oscuro
+$color-acento: #81C784; // Verde claro
+$color-fondo: #F5F5F5; 
+$color-texto: #333;
+$color-blanco: #fff;
 
-$color-font: #1C1C1C;
-$color-font-secundario:#03989e;
-$color-font-blanco:#ffffff;
+// Fuente
+$fuente-principal: 'Helvetica Neue', sans-serif;
+
+// Media Query
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1024px;

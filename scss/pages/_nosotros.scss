@@ -1,0 +1,45 @@
+@use '../abstracts/variables';
+
+.nosotros {
+  padding: 2rem;
+  background-color: variables.$color-blanco;
+
+  h2 {
+    color: variables.$color-primario;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .equipo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+
+    .miembro {
+      width: 250px;
+      text-align: center;
+
+      img {
+        width: 100%;
+        border-radius: 50%;
+      }
+
+      h3 {
+        margin-top: 0.5rem;
+        color: variables.$color-secundario;
+      }
+
+      span {
+        font-size: 0.9rem;
+        color: gray;
+      }
+    }
+  }
+}

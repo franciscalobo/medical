@@ -1,0 +1,47 @@
+
+@use '../abstracts/mixin';
+@use '../abstracts/variables';
+
+.contacto {
+  background-color: variables.$color-fondo;
+  padding: 2rem;
+
+  h2 {
+    text-align: center;
+    color: variables.$color-primario;
+    margin-bottom: 2rem;
+  }
+
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: variables.$color-blanco;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+
+    .form-group {
+      margin-bottom: 1rem;
+
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-family: inherit;
+      }
+    }
+
+    button {
+      @include mixin.boton(variables.$color-primario, variables.$color-blanco);
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@use '../abstracts/variables';
+
+.profesionales {
+  padding: 3rem 1rem;
+
+  h2 {
+    text-align: center;
+    color: variables.$color-primario;
+    margin-bottom: 2rem;
+  }
+
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+
+    .pro-card {
+      background: variables.$color-blanco;
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+      width: 250px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+
+      img {
+        width: 100%;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+      }
+
+      h3 {
+        color: variables.$color-secundario;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

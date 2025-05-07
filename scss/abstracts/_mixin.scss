@@ -1,33 +1,26 @@
-// //mixin flex
+@use 'variables';
 
-// @mixin flex{
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-    
-// }
+@mixin responsive($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: variables.$mobile) { @content; }
+  } @else if $breakpoint == tablet {
+    @media (max-width: variables.$tablet) { @content; }
+  } @else if $breakpoint == desktop {
+    @media (max-width: variables.$desktop) { @content; }
+  }
+}
 
-// @mixin img{
-//     width: 100%;
-//     height: 100%;
-//     object-fit: cover;
+@mixin boton($bg-color, $text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s;
 
-// }
-
-// @mixin section-title {
-//     font-size: 2rem;
-//     margin-bottom: 1rem;
-//     color: $color-terciario;
-//   }
-
-// @mixin flex-body{
-//     display: flex;
-//     flex-direction: column;
-//     min-height: 100vh;
-//     justify-content: space-around;
-// }
-
-// @mixin flex-main{
-//     background-color: $color-terciario;
-//     flex-grow: 1;
-// }
+  &:hover {
+    background-color: darken($bg-color, 10%);
+  }
+}

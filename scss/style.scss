@@ -1,10 +1,7 @@
-@import "abstracts/variables";
-
-@import "abstracts/mixin";
-
-//reset
-@import "base/reset";
-
-//home
-@import "pages/home";
-
+@use './abstracts/variables';
+@use './abstracts/mixin';
+@use './base/reset';
+@use './pages/contacto';
+@use './pages/nosotros';
+@use './pages/disciplinas';
+@use './pages/profesionales';
