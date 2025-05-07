@@ -22,16 +22,16 @@ a {
   color: inherit;
 }
 
-.contacto {
+.formulario-contacto {
   background-color: #F5F5F5;
   padding: 2rem;
 }
-.contacto h2 {
+.formulario-contacto h2 {
   text-align: center;
   color: #4CAF50;
   margin-bottom: 2rem;
 }
-.contacto form {
+.formulario-contacto form {
   max-width: 600px;
   margin: 0 auto;
   background: #fff;
@@ -39,23 +39,23 @@ a {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
-.contacto form .form-group {
+.formulario-contacto form .form-group {
   margin-bottom: 1rem;
 }
-.contacto form .form-group label {
+.formulario-contacto form .form-group label {
   display: block;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
-.contacto form .form-group input,
-.contacto form .form-group textarea {
+.formulario-contacto form .form-group input,
+.formulario-contacto form .form-group textarea {
   width: 100%;
   padding: 0.75rem;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-family: inherit;
 }
-.contacto form button {
+.formulario-contacto form button {
   background-color: #4CAF50;
   color: #fff;
   padding: 0.75rem 1.5rem;
@@ -66,45 +66,57 @@ a {
   transition: background-color 0.3s;
   width: 100%;
 }
-.contacto form button:hover {
+.formulario-contacto form button:hover {
   background-color: rgb(60.5577689243, 139.4422310757, 63.7450199203);
 }
 
 .nosotros {
-  padding: 2rem;
+  padding: 3rem 1.5rem;
   background-color: #fff;
+}
+.nosotros .contenedor {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
 }
 .nosotros h2 {
   color: #4CAF50;
+  margin-top: 2rem;
   margin-bottom: 1rem;
 }
 .nosotros p {
   line-height: 1.6;
-  max-width: 800px;
-  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  color: #333;
 }
-.nosotros .equipo {
+.nosotros .valores {
+  list-style: none;
+  padding: 0;
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  margin-top: 2rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
-.nosotros .equipo .miembro {
-  width: 250px;
-  text-align: center;
-}
-.nosotros .equipo .miembro img {
-  width: 100%;
-  border-radius: 50%;
-}
-.nosotros .equipo .miembro h3 {
-  margin-top: 0.5rem;
+.nosotros .valores li {
+  background-color: #F5F5F5;
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  width: fit-content;
   color: #2E7D32;
+  font-weight: 500;
 }
-.nosotros .equipo .miembro span {
-  font-size: 0.9rem;
-  color: gray;
+.nosotros .btn-equipo {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.nosotros .btn-equipo:hover {
+  background-color: rgb(60.5577689243, 139.4422310757, 63.7450199203);
 }
 
 .disciplinas {
