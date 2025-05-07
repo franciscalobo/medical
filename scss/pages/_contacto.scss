@@ -45,3 +45,29 @@
     }
   }
 }
+
+.info-contacto {
+    background-color: variables.$color-blanco;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-top: 1px solid #eee;
+  
+    h2 {
+      color: variables.$color-primario;
+      margin-bottom: 2rem;
+    }
+  
+    p {
+      margin: 0.75rem 0;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+  
+      i {
+        color: variables.$color-primario;
+        font-size: 1.2rem;
+      }
+    }
+  }
